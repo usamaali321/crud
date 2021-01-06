@@ -1,18 +1,18 @@
 extends ../layout
 
 block content
-    h1 Add New Doctor
+    h1 Add New Customer
     form(action="/products/add",method="post")
         .form-group
-            label(for="name") Doctor Name
+            label(for="name") Customer Name
             input#name(type="text", class="form-control",name="name")
         .form-group
-            label(for="fee") FEE
+            label(for="fee") Price
             input#fee(type="text", class="form-control",name="fee")
         .form-group
-            label(for="docid") Doctor ID
+            label(for="docid") Customer ID
             input#docid(type="text", class="form-control",name="docid")
         .form-group
-            label(for="appointments") Appointments
+            label(for="appointments") services
             input#appointments(type="text", class="form-control",name="appointments")
         input(type="submit", class="btn btn-info")
