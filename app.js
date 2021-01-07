@@ -50,7 +50,7 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 const db =
-  "mongodb+srv://ali:123@cluster0.gcvge.mongodb.net/cluster0?retryWrites=true&w=majority";
+  "mongodb+srv://usama:<password>@cluster0.rmz3v.mongodb.net/<dbname>?retryWrites=true&w=majority";
 
 mongoose
   .connect(db, {
