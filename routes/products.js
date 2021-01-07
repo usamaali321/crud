@@ -6,7 +6,7 @@ var checksessionauth = require("../middlewares/checksessionauth");
 router.get('/', async function(req, res, next) {
   let product = await productmodel.find();
   console.log(req.session.user);
-  res.render('products/list',{title:"Hospitals DATABASE",products:product});
+  res.render('products/list',{title:"Seat Details",products:product});
 });
 router.get('/add',checksessionauth, async function(req, res, next) {
   res.render('products/add');
