@@ -5,15 +5,15 @@ block content
         .col-sm-8
             h1=title
         .col-sm-4
-            a(href="/products/add" class="btn btn-success btn-sm float-right") Add New doctor
+            a(href="/products/add" class="btn btn-success btn-sm float-right") Add New Customer
     table.table
         thead
             tr
                 th name
-                th fee
-                th docid
-                th appointments
-                th Functions
+                th fare
+                th cusid
+                th Booking
+                th actions
         tbody
             each product in products
                 tr
@@ -24,4 +24,4 @@ block content
                     td 
                         a(href="/products/delete/"+product._id,class="btn btn-danger",style="margin-right:10px") Delete
                         a(href="/products/update/"+product._id,class="btn btn-warning",style="margin-right:10px") Edit
-                        a(href="/products/cart/"+product._id,class="btn btn-info") Add to appoint
+                        a(href="/products/cart/"+product._id,class="btn btn-info") Add customer order
